@@ -13,7 +13,4 @@ end
 ID = SETTINGS["id"]
 PASS = SETTINGS["password"]
 
-p ID
-p PASS
-
 system("curl --data-urlencode 'name=#{ID}' --data-urlencode 'pass=#{PASS}' https://webauth03.cc.tsukuba.ac.jp:8443/cgi-bin/adeflogin.cgi >/dev/null 2>&1")
