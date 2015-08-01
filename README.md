@@ -3,13 +3,13 @@
 
 ## Usages
 
-1. userinfo.confを設定
+1.userinfo.confを設定
 ```
 id: "your id"
 password: "your password"
 ```
 
-2. 新しくplistを作成して，launchdに登録
+2.新しくplistを作成して，launchdに登録
 ```
 $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -17,7 +17,7 @@ $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>login</string>
+    <string>com.login.prpr-man.agent</string>
 
     <key>ProgramArguments</key>
     <array>
@@ -31,4 +31,4 @@ $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 $ launchctl load ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 ```
 
-3. 快適宿舎生活
+3.快適宿舎生活
