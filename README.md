@@ -17,7 +17,7 @@ $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>login</string>
+    <string>com.login.prpr-man.agent</string>
 
     <key>ProgramArguments</key>
     <array>
