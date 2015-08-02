@@ -24,8 +24,13 @@ $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
       <string>YOUR_INSTALL_DIRECTORY/login.rb</string>
     </array>
 
-    <key>StartInterval</key>
-    <integer>86400</integer>
+    <key>StartCalenderInterval</key>
+    <dict>
+      <key>Hour</key>
+      <integer>0</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
 </dict>
 </plist>
 $ launchctl load ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
