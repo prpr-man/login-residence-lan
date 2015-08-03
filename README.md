@@ -34,6 +34,7 @@ $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 </dict>
 </plist>
 $ launchctl load ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
+$ launchctl start com.login.prpr-man.agent
 ```
 
 3.快適宿舎生活
