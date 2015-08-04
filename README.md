@@ -9,7 +9,12 @@ id: "your id"
 password: "your password"
 ```
 
-2.新しくplistを作成して，launchdに登録
+2.実行権限付与
+```
+$ chmod a+x login.rb
+```
+
+3.新しくplistを作成して，launchdに登録
 ```
 $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -37,4 +42,4 @@ $ launchctl load ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
 $ launchctl start com.login.prpr-man.agent
 ```
 
-3.快適宿舎生活
+4.快適宿舎生活
