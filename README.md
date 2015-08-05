@@ -24,18 +24,18 @@ $ cat ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
     <key>Label</key>
     <string>com.login.prpr-man.agent</string>
 
-    <key>ProgramArguments</key>
-    <array>
-      <string>YOUR_INSTALL_DIRECTORY/login.rb</string>
-    </array>
+    <key>Program</key>
+    <string>/Users/K-Oharada/Development/login-residence-lan/login.rb</string>
 
-    <key>StartCalenderInterval</key>
-    <dict>
-      <key>Hour</key>
-      <integer>0</integer>
-      <key>Minute</key>
-      <integer>0</integer>
-    </dict>
+    <key>StartCalendarInterval</key>
+    <array>
+      <dict>
+        <key>Hour</key>
+        <integer>0</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+      </dict>
+    </array>
 </dict>
 </plist>
 $ launchctl load ~/Library/LaunchAgents/com.login.prpr-man.agent.plist
